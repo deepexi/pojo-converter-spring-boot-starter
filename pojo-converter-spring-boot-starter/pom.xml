@@ -7,8 +7,30 @@
         <artifactId>pojo-converter-spring-boot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
+    <url>https://github.com/deepexi/pojo-converter-spring-boot</url>
     <artifactId>pojo-converter-spring-boot-starter</artifactId>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://mit-license.org/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>yuanqingx</name>
+            <email>yuanqingx@aliyun.com</email>
+            <url>https://github.com/yuanqingx</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>https://github.com/deepexi/pojo-converter-spring-boot</connection>
+        <developerConnection>https://github.com/deepexi/pojo-converter-spring-boot.git</developerConnection>
+        <url>https://github.com/deepexi</url>
+    </scm>
 
     <properties>
         <java.version>1.8</java.version>
@@ -23,7 +45,6 @@
             <artifactId>pojo-converter-spring-boot-autoconfigure</artifactId>
         </dependency>
     </dependencies>
-
 
 
 </project>
