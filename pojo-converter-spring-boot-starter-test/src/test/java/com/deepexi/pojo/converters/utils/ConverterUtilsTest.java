@@ -24,6 +24,8 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
 
     private static DemoDTO demoDTO;
 
+    private static DemoDTO demoDTONull;
+
     private static List<DemoDTO> demoDTOs = new ArrayList<>(SIZE);
 
     @BeforeClass
@@ -43,6 +45,7 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
 
     @Test
     public void convert() {
+        Assert.assertNotNull("Description result con not null...", demoDTO.getDescription());
         OtherVO otherVO = ConverterUtils.convert(demoDTO, OtherVO.class);
         Assert.assertNotNull("Convert result con not null...", otherVO);
         Assert.assertEquals(otherVO.getId(), demoDTO.getId());
@@ -53,6 +56,14 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
         OtherVO otherVO = ConverterUtils.convert("string", OtherVO.class);
         Assert.assertNull(otherVO.getName());
     }
+
+    @Test
+    public void convertNull() {
+        OtherVO otherVONull = ConverterUtils.convert(DemoDTO.class, OtherVO.class);
+        Assert.assertNull(otherVONull.getId());
+        Assert.assertNull(otherVONull.getCurrentTime());
+    }
+
     @Test
     public void convertAll() {
         List<OtherVO> otherVOS = ConverterUtils.convertAll(demoDTOs, OtherVO.class);
