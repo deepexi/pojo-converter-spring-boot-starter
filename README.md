@@ -12,7 +12,7 @@
      Spring Boot：2.1.9.RELEASE
 
 ## Getting Started
-  实现自定义的Converter，然后引入starter坐标后，调用ConverterUtils的方法即可进行转化，具体使用参考![Test Demo](https://github.com/deepexi/pojo-converter-spring-boot/tree/master/pojo-converter-spring-boot-starter-test)
+  实现自定义的Converter，然后引入starter坐标后，调用ConverterUtils的方法即可进行转化，具体使用参考[Test Demo](https://github.com/deepexi/pojo-converter-spring-boot/tree/master/pojo-converter-spring-boot-starter-test)
   
   目前还在申请发布至Maven仓库，需要自行安装到本地仓库。
   
