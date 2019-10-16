@@ -16,31 +16,36 @@
   
   目前还在申请发布至Maven仓库，需要自行安装到本地仓库。
   
-- src/pom.xml
+### 引入坐标
 
-      <dependency>
-        <groupId>com.deepexi</groupId>
-        <artifactId>pojo-converter-spring-boot-starter</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-      </dependency>
+```xml
+<dependency>
+    <groupId>com.deepexi</groupId>
+    <artifactId>pojo-converter-spring-boot-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
     
-- 自定义Converter，自动注册
+### 自定义Converter，自动注册
 
-      @Component
-      public class customerVOConverter implements Converter<from, to> {
-    
-        @Override
-        public to convert(From from) {
-           // customer conver operation
-            return to;
-        }
-        
-      }
+```java
+@Component
+public class customerVOConverter implements Converter<from, to> {
 
-- import ConverterUtils
+    @Override
+    public to convert(From from) {
+        // customer conver operation
+        return to;
+    }
+}
+```
 
-      convert(target, dest)
-      convertAll(target, dest)
+### import ConverterUtils
+
+```java
+convert(target, dest);
+convertAll(target, dest);
+```
       
     
       
