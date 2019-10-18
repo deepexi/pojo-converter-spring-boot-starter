@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.deepexi</groupId>
+    <groupId>com.github.deepexi</groupId>
     <artifactId>pojo-converter-spring-boot-starter</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <url>https://github.com/deepexi/pojo-converter-spring-boot-starter</url>
 

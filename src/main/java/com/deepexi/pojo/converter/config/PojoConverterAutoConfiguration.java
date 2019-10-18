@@ -18,7 +18,6 @@ public class PojoConverterAutoConfiguration {
 
     @PostConstruct
     public void init() {
-        System.out.println("conversionService = " + conversionService);
         ConverterUtils.setConversionService(conversionService);
     }
 
