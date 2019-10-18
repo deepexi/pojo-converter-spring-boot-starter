@@ -7,7 +7,7 @@
     <groupId>com.github.deepexi</groupId>
     <artifactId>pojo-converter-spring-boot-starter</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-release</version>
     <url>https://github.com/deepexi/pojo-converter-spring-boot-starter</url>
 
     <parent>

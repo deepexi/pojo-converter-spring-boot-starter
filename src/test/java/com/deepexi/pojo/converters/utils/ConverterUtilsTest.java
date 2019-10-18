@@ -69,9 +69,16 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
         List<OtherVO> otherVOS = ConverterUtils.convertAll(demoDTOs, OtherVO.class);
         Assert.assertEquals(otherVOS.size(), SIZE);
         for (int i = 0; i < SIZE; i++) {
-//            Assert.assertEquals(otherVOS.get(i).getId(), demoDTOs.get(i).getId());
-//            Assert.assertEquals(otherVOS.get(i).getName(), demoDTOs.get(i).getName());
             Assert.assertNotNull("日期不为空...", otherVOS.get(i).getCurrentTime());
         }
+    }
+
+
+    @Test
+    public void convertAllOfEmpty() {
+        demoDTOs.clear();
+        List<OtherVO> otherVOS = ConverterUtils.convertAll(demoDTOs, OtherVO.class);
+        Assert.assertTrue(otherVOS.isEmpty());
+
     }
 }
