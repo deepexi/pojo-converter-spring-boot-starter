@@ -1,6 +1,6 @@
 # pojo-converter-spring-boot-starter
 
-[![Build Status](https://travis-ci.org/deepexi/pojo-converter-spring-boot.svg?branch=master)](https://travis-ci.org/deepexi/pojo-converter-spring-boot) [![codecov](https://codecov.io/gh/deepexi/pojo-converter-spring-boot/branch/master/graph/badge.svg)](https://codecov.io/gh/deepexi/pojo-converter-spring-boot)
+[![Build Status](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter.svg?branch=master)](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter) [![codecov](https://codecov.io/gh/deepexi/pojo-converter-spring-boot/branch/master/graph/badge.svg)](https://codecov.io/gh/deepexi/pojo-converter-spring-boot)
 
 项目中用到了各种POJO对象，如VO、DTO、BO；为了方便POJO在不同业务层的转换，
 自定义了相应的converter，而使用Converter需要在Spring中进行相应的配置。
