@@ -1,6 +1,8 @@
 # pojo-converter-spring-boot-starter
 
-[![Build Status](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter.svg?branch=master)](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter) [![codecov](https://codecov.io/gh/deepexi/pojo-converter-spring-boot/branch/master/graph/badge.svg)](https://codecov.io/gh/deepexi/pojo-converter-spring-boot)
+[![Build Status](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter.svg?branch=master)](https://travis-ci.org/deepexi/pojo-converter-spring-boot-starter) 
+[![codecov](https://codecov.io/gh/deepexi/pojo-converter-spring-boot/branch/master/graph/badge.svg)](https://codecov.io/gh/deepexi/pojo-converter-spring-boot)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.deepexi/payload-spring-boot-starter.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.deepexi%22%20AND%20a:%22payload-spring-boot-starter%22)
 
 项目中用到了各种POJO对象，如VO、DTO、BO；为了方便POJO在不同业务层的转换，
 自定义了相应的converter，而使用Converter需要在Spring中进行相应的配置。
@@ -14,7 +16,6 @@
 ## Getting Started
   实现自定义的Converter，然后引入starter坐标后，调用ConverterUtils的方法即可进行转化，具体使用参考[Test Demo](https://github.com/deepexi/pojo-converter-spring-boot-starter/tree/master/src/test)
   
-  目前还在申请发布至Maven仓库，需要自行安装到本地仓库。
   
 ### 引入坐标
 
@@ -22,7 +23,7 @@
 <dependency>
     <groupId>com.github.deepexi</groupId>
     <artifactId>pojo-converter-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-release</version>
 </dependency>
 ```
     
