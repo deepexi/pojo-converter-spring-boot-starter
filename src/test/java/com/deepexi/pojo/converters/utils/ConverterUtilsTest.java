@@ -24,14 +24,12 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
 
     private static DemoDTO demoDTO;
 
-    private static DemoDTO demoDTONull;
-
-    private static List<DemoDTO> demoDTOs = new ArrayList<>(SIZE);
+    private static List<DemoDTO> demoDTOs ;
 
     @BeforeClass
     public static void setUp() {
         demoDTO = new DemoDTO("1", "张三", "中国广州");
-
+        demoDTOs = new ArrayList<>(SIZE);
         for (int i = 0; i < 5; i++) {
             DemoDTO dto = new DemoDTO("" + i, "张三" + i, "中国广州" + i);
             demoDTOs.add(dto);
@@ -76,8 +74,8 @@ public class ConverterUtilsTest extends PojoConverterSpringBootStarterTestApplic
 
     @Test
     public void convertAllOfEmpty() {
-        demoDTOs.clear();
-        List<OtherVO> otherVOS = ConverterUtils.convertAll(demoDTOs, OtherVO.class);
+        List<DemoDTO> demoDTOS = new ArrayList<>();
+        List<OtherVO> otherVOS = ConverterUtils.convertAll(demoDTOS, OtherVO.class);
         Assert.assertTrue(otherVOS.isEmpty());
 
     }
