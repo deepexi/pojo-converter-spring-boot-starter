@@ -19,9 +19,8 @@ public class ConverterConfigurer implements WebMvcConfigurer {
     public void addFormatters(FormatterRegistry registry) {
         Map<String, Converter> beans = context.getBeansOfType(Converter.class);
         beans.forEach((k, v) -> {
-            if (v != null) {
+            if (v != null)
                 registry.addConverter((Converter<?, ?>) v);
-            }
         });
     }
 }
